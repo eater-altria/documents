@@ -1,23 +1,129 @@
-<template><div><h1 id="get-started" tabindex="-1"><a class="header-anchor" href="#get-started"><span>Get Started</span></a></h1>
-<p>This is a normal page, which contains VuePress basics.</p>
-<h2 id="pages" tabindex="-1"><a class="header-anchor" href="#pages"><span>Pages</span></a></h2>
-<p>You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.</p>
-<p>See <a href="https://vuejs.press/guide/page.html#routing" target="_blank" rel="noopener noreferrer">routing</a> for more details.</p>
-<h2 id="content" tabindex="-1"><a class="header-anchor" href="#content"><span>Content</span></a></h2>
-<p>Every markdown file <a href="https://vuejs.press/guide/page.html#content" target="_blank" rel="noopener noreferrer">will be rendered to HTML, then converted to a Vue SFC</a>.</p>
-<p>VuePress support basic markdown syntax and <a href="https://vuejs.press/guide/markdown.html#syntax-extensions" target="_blank" rel="noopener noreferrer">some extensions</a>, you can also <a href="https://vuejs.press/guide/markdown.html#using-vue-in-markdown" target="_blank" rel="noopener noreferrer">use Vue features</a> in it.</p>
-<h2 id="configuration" tabindex="-1"><a class="header-anchor" href="#configuration"><span>Configuration</span></a></h2>
-<p>VuePress use a <code v-pre>.vuepress/config.js</code>(or .ts) file as <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">site configuration</a>, you can use it to config your site.</p>
-<p>For <a href="https://vuejs.press/guide/configuration.html#client-config-file" target="_blank" rel="noopener noreferrer">client side configuration</a>, you can create <code v-pre>.vuepress/client.js</code>(or .ts).</p>
-<p>Meanwhile, you can also add configuration per page with <a href="https://vuejs.press/guide/page.html#frontmatter" target="_blank" rel="noopener noreferrer">frontmatter</a>.</p>
-<h2 id="layouts-and-customization" tabindex="-1"><a class="header-anchor" href="#layouts-and-customization"><span>Layouts and customization</span></a></h2>
-<p>Here are common configuration controlling layout of <code v-pre>@vuepress/theme-default</code>:</p>
+<template><div><h1 id="关于我" tabindex="-1"><a class="header-anchor" href="#关于我"><span>关于我</span></a></h1>
+<div class="about-me">
+<div class="intro-card">
+<h2 id="👋-你好-我是-altria" tabindex="-1"><a class="header-anchor" href="#👋-你好-我是-altria"><span>👋 你好，我是 Altria</span></a></h2>
+<p>一名热爱编程的<strong>程序媛</strong>，专注于前端开发，同时也涉足后端技术。</p>
+</div>
+<div class="skills-section">
+<h2 id="💻-技术栈" tabindex="-1"><a class="header-anchor" href="#💻-技术栈"><span>💻 技术栈</span></a></h2>
+<div class="skill-category">
+<h3 id="前端开发" tabindex="-1"><a class="header-anchor" href="#前端开发"><span>前端开发</span></a></h3>
 <ul>
-<li><a href="https://vuejs.press/reference/default-theme/config.html#navbar" target="_blank" rel="noopener noreferrer">navbar</a></li>
-<li><a href="https://vuejs.press/reference/default-theme/config.html#sidebar" target="_blank" rel="noopener noreferrer">sidebar</a></li>
+<li><strong>TypeScript</strong> - 类型安全的 JavaScript</li>
+<li><strong>React</strong> - 构建用户界面的库</li>
+<li><strong>Vue</strong> - 渐进式 JavaScript 框架</li>
 </ul>
-<p>Check <a href="https://vuejs.press/reference/default-theme/" target="_blank" rel="noopener noreferrer">default theme docs</a> for full reference.</p>
-<p>You can <a href="https://vuejs.press/reference/default-theme/styles.html#style-file" target="_blank" rel="noopener noreferrer">add extra style</a> with <code v-pre>.vuepress/styles/index.scss</code> file.</p>
+</div>
+<div class="skill-category">
+<h3 id="后端开发" tabindex="-1"><a class="header-anchor" href="#后端开发"><span>后端开发</span></a></h3>
+<ul>
+<li><strong>Golang</strong> - 简洁高效的编程语言</li>
+<li><strong>Rust</strong> - 系统级编程语言，注重安全与性能</li>
+</ul>
+</div>
+</div>
+<div class="about-content">
+<h2 id="🌟-关于我" tabindex="-1"><a class="header-anchor" href="#🌟-关于我"><span>🌟 关于我</span></a></h2>
+<p>我是一名前端开发者，对技术充满热情。喜欢探索新技术，解决实际问题，并将经验分享给他人。</p>
+<p>在这个博客中，我会分享：</p>
+<ul>
+<li>💡 技术学习心得</li>
+<li>🛠️ 项目开发经验</li>
+<li>📚 技术文档和教程</li>
+<li>🎨 前端设计思考</li>
+<li>🔧 工具和效率技巧</li>
+</ul>
+</div>
+</div>
 </div></template>
 
 
+
+<style>
+.about-me {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.intro-card h2 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.skills-section {
+  margin: 2rem 0;
+}
+
+.skill-category {
+  background: var(--vp-c-bg-soft);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--vp-c-divider);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--vp-c-brand);
+}
+
+.skill-category h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--vp-c-brand);
+  font-size: 1.3rem;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-category li {
+  padding: 0.5rem 0;
+  color: var(--vp-c-text-1);
+  font-size: 1rem;
+}
+
+.skill-category li strong {
+  color: var(--vp-c-brand);
+  font-weight: 600;
+}
+
+.about-content {
+  background: var(--vp-c-bg-soft);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  border-left: 4px solid var(--vp-c-brand);
+}
+
+.about-content h2 {
+  margin-top: 0;
+  color: var(--vp-c-text-1);
+}
+
+.about-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-content li {
+  padding: 0.5rem 0;
+  color: var(--vp-c-text-2);
+  line-height: 1.8;
+}
+</style>

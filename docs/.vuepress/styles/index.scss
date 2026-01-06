@@ -1,0 +1,442 @@
+// 自定义样式 - 让页面更酷炫
+
+// 定义渐变色变量
+:root {
+  --vp-c-brand: #646cff;
+  --vp-c-brand-light: #747bff;
+  --vp-c-brand-lighter: #9499ff;
+  --vp-c-brand-dark: #535bf2;
+  --vp-c-brand-darker: #454ce1;
+  
+  /* 自定义渐变色 */
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+// 主页英雄区域样式
+.vp-hero {
+  position: relative;
+  padding: 4rem 0 2rem;
+  text-align: center;
+  
+  // 添加动态背景
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-primary);
+    opacity: 0.05;
+    z-index: -1;
+    border-radius: 20px;
+    animation: gradientShift 15s ease infinite;
+  }
+  
+  // 标题动画
+  h1 {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    animation: fadeInUp 0.8s ease-out;
+    letter-spacing: -0.02em;
+  }
+  
+  // 描述文字
+  .vp-hero-description {
+    font-size: 1.5rem;
+    color: var(--vp-c-text-2);
+    margin: 1rem 0 2rem;
+    animation: fadeInUp 0.8s ease-out 0.2s both;
+    font-weight: 300;
+  }
+  
+  // 按钮样式增强
+  .vp-hero-actions {
+    animation: fadeInUp 0.8s ease-out 0.4s both;
+    
+    .vp-hero-action-button {
+      transition: all 0.3s ease;
+      border-radius: 12px;
+      padding: 0.75rem 2rem;
+      font-weight: 500;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      
+      &.primary {
+        background: var(--gradient-primary);
+        border: none;
+        
+        &:hover {
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+      }
+      
+      &.secondary {
+        border: 2px solid transparent;
+        background: linear-gradient(white, white) padding-box,
+                    var(--gradient-primary) border-box;
+        color: var(--vp-c-brand);
+        
+        &:hover {
+          transform: translateY(-2px);
+          background: var(--gradient-primary);
+          color: white;
+          box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+      }
+    }
+  }
+  
+  // Hero 图片样式
+  .vp-hero-image {
+    animation: float 3s ease-in-out infinite;
+    filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.1));
+  }
+}
+
+// 特性卡片样式
+.vp-features {
+  padding: 4rem 0;
+  
+  .vp-feature {
+    transition: all 0.3s ease;
+    padding: 2rem;
+    border-radius: 16px;
+    background: var(--vp-c-bg-soft);
+    border: 1px solid var(--vp-c-divider);
+    
+    &:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+      border-color: var(--vp-c-brand);
+      background: var(--vp-c-bg);
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
+    p {
+      color: var(--vp-c-text-2);
+      line-height: 1.7;
+    }
+  }
+}
+
+// 导航栏样式
+.vp-navbar {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.8);
+  border-bottom: 1px solid var(--vp-c-divider);
+  
+  .vp-site-name {
+    font-weight: 600;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+// 暗色模式适配
+[data-theme='dark'] {
+  .vp-navbar {
+    background: rgba(27, 27, 31, 0.8);
+  }
+  
+  .vp-hero::before {
+    opacity: 0.1;
+  }
+  
+  .vp-hero-actions .vp-hero-action-button.secondary {
+    background: linear-gradient(var(--vp-c-bg), var(--vp-c-bg)) padding-box,
+                var(--gradient-primary) border-box;
+    color: var(--vp-c-brand-lighter);
+    
+    &:hover {
+      background: var(--gradient-primary);
+      color: white;
+    }
+  }
+}
+
+// 动画定义
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes gradientShift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+// 页面整体样式
+.vp-home {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .vp-hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .vp-hero .vp-hero-description {
+    font-size: 1.2rem;
+  }
+}
+
+// 添加一些装饰性元素
+.vp-hero::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--gradient-accent);
+  opacity: 0.1;
+  top: -100px;
+  right: -100px;
+  z-index: -1;
+  animation: pulse 4s ease-in-out infinite;
+}
+
+// 添加更多装饰性背景元素
+.vp-hero {
+  overflow: hidden;
+  
+  // 添加多个装饰圆圈
+  &::before {
+    background-size: 200% 200%;
+  }
+}
+
+// 特性卡片网格布局优化
+.vp-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+  
+  .vp-feature {
+    position: relative;
+    overflow: hidden;
+    
+    // 添加悬停时的光效
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(102, 126, 234, 0.1) 0%, transparent 70%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    &:hover::before {
+      opacity: 1;
+    }
+  }
+}
+
+// 添加页面加载动画
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.vp-feature {
+  animation: slideIn 0.6s ease-out;
+  
+  @for $i from 1 through 6 {
+    &:nth-child(#{$i}) {
+      animation-delay: #{$i * 0.1}s;
+      animation-fill-mode: both;
+    }
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.15;
+  }
+}
+
+// 博客文章列表样式
+.vp-page {
+  .blog-list {
+    margin-top: 2rem;
+    
+    h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      
+      a {
+        color: var(--vp-c-text-1);
+        text-decoration: none;
+        transition: color 0.3s ease;
+        
+        &:hover {
+          color: var(--vp-c-brand);
+        }
+      }
+    }
+    
+    h3:first-child {
+      margin-top: 0;
+    }
+    
+    .blog-meta {
+      display: block;
+      color: var(--vp-c-text-2);
+      font-size: 0.9rem;
+      margin-bottom: 0.5rem;
+    }
+    
+    p {
+      color: var(--vp-c-text-2);
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+// 博客文章页面样式
+.vp-page {
+  .page-meta {
+    margin: 1rem 0 2rem;
+    padding: 1rem;
+    background: var(--vp-c-bg-soft);
+    border-radius: 8px;
+    border-left: 4px solid var(--vp-c-brand);
+    
+    .meta-item {
+      display: inline-block;
+      margin-right: 1.5rem;
+      color: var(--vp-c-text-2);
+      font-size: 0.9rem;
+      
+      .meta-label {
+        color: var(--vp-c-text-1);
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// 文章卡片样式（用于博客列表）
+.article-card {
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  background: var(--vp-c-bg-soft);
+  border-radius: 12px;
+  border: 1px solid var(--vp-c-divider);
+  transition: all 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: var(--vp-c-brand);
+  }
+  
+  .article-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    
+    a {
+      color: var(--vp-c-text-1);
+      text-decoration: none;
+      background: var(--gradient-primary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  
+  .article-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--vp-c-text-2);
+  }
+  
+  .article-excerpt {
+    color: var(--vp-c-text-2);
+    line-height: 1.6;
+  }
+  
+  .article-tags {
+    margin-top: 1rem;
+    
+    .tag {
+      display: inline-block;
+      padding: 0.25rem 0.75rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+      background: var(--vp-c-bg);
+      border: 1px solid var(--vp-c-divider);
+      border-radius: 16px;
+      font-size: 0.85rem;
+      color: var(--vp-c-text-2);
+      transition: all 0.2s ease;
+      
+      &:hover {
+        background: var(--vp-c-brand);
+        color: white;
+        border-color: var(--vp-c-brand);
+      }
+    }
+  }
+}

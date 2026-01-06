@@ -1,33 +1,73 @@
 ---
 home: true
-title: Home
-heroImage: https://vuejs.press/images/hero.png
+title: 某电子的 Altria 的部落格
+heroImage: /logo.svg
+heroText: 某电子的 Altria 的部落格
+tagline: 探索技术 · 记录生活 · 分享思考
 actions:
-  - text: Get Started
-    link: /get-started.html
+  - text: 查看博客
+    link: /posts/
     type: primary
-
-  - text: Introduction
-    link: https://vuejs.press/guide/introduction.html
+  - text: 了解更多
+    link: /get-started.html
     type: secondary
 
 features:
-  - title: Simplicity First
-    details: Minimal setup with markdown-centered project structure helps you focus on writing.
-  - title: Vue-Powered
-    details: Enjoy the dev experience of Vue, use Vue components in markdown, and develop custom themes with Vue.
-  - title: Performant
-    details: VuePress generates pre-rendered static HTML for each page, and runs as an SPA once a page is loaded.
-  - title: Themes
-    details: Providing a default theme out of the box. You can also choose a community theme or create your own one.
-  - title: Plugins
-    details: Flexible plugin API, allowing plugins to provide lots of plug-and-play features for your site.
-  - title: Bundlers
-    details: Default bundler is Vite, while Webpack is also supported. Choose the one you like!
+  - title: 💡 技术分享
+    details: 记录学习过程中的技术心得，分享开发经验与最佳实践，与大家一起成长。
+  - title: 🎨 创意设计
+    details: 探索前端设计之美，关注用户体验，追求简洁优雅的界面设计。
+  - title: 🚀 前沿探索
+    details: 紧跟技术潮流，探索新兴技术，将理论与实践相结合。
+  - title: 📝 生活随笔
+    details: 记录生活中的点滴思考，分享有趣的故事和感悟。
+  - title: 🔧 工具推荐
+    details: 发现并分享好用的开发工具、效率工具，提升工作与学习效率。
+  - title: 🌟 开源贡献
+    details: 参与开源项目，贡献代码，与全球开发者共同推动技术进步。
 
-footer: MIT Licensed | Copyright © 2018-present VuePress Community
+footer: Made with ❤️ by Altria | © 2024 某电子的 Altria 的部落格
 ---
 
-This is the content of home page. Check [Home Page Docs][default-theme-home] for more details.
+## 最新文章
 
-[default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page
+<div class="blog-list">
+
+### [家庭影视墙搭建指南](/posts/家庭影视墙搭建指南.html)
+<span class="blog-meta">2024-01-15 · 技术指南</span>
+
+打造属于你的家庭影院体验，从硬件选择到软件配置的完整指南。
+
+### [家用路由器组网指南](/posts/家用路由器组网指南.html)
+<span class="blog-meta">2024-01-10 · 技术指南</span>
+
+构建稳定高效的家庭网络环境，从路由器选择到高级配置的完整指南。
+
+</div>
+
+<style>
+.blog-list {
+  margin-top: 2rem;
+}
+
+.blog-list h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-list h3:first-child {
+  margin-top: 0;
+}
+
+.blog-meta {
+  display: block;
+  color: var(--vp-c-text-2);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-list p {
+  color: var(--vp-c-text-2);
+  line-height: 1.6;
+}
+</style>

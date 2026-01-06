@@ -1,46 +1,147 @@
-# Get Started
+---
+title: 关于我
+description: Altria 的个人介绍
+---
 
-This is a normal page, which contains VuePress basics.
+# 关于我
 
-## Pages
+<div class="about-me">
 
-You can add markdown files in your vuepress directory, every markdown file will be converted to a page in your site.
+<div class="intro-card">
 
-See [routing][] for more details.
+## 👋 你好，我是 Altria
 
-## Content
+一名热爱编程的**程序媛**，专注于前端开发，同时也涉足后端技术。
 
-Every markdown file [will be rendered to HTML, then converted to a Vue SFC][content].
+</div>
 
-VuePress support basic markdown syntax and [some extensions][synatex-extensions], you can also [use Vue features][vue-feature] in it.
+<div class="skills-section">
 
-## Configuration
+## 💻 技术栈
 
-VuePress use a `.vuepress/config.js`(or .ts) file as [site configuration][config], you can use it to config your site.
+<div class="skill-category">
 
-For [client side configuration][client-config], you can create `.vuepress/client.js`(or .ts).
+### 前端开发
 
-Meanwhile, you can also add configuration per page with [frontmatter][].
+- **TypeScript** - 类型安全的 JavaScript
+- **React** - 构建用户界面的库
+- **Vue** - 渐进式 JavaScript 框架
 
-## Layouts and customization
+</div>
 
-Here are common configuration controlling layout of `@vuepress/theme-default`:
+<div class="skill-category">
 
-- [navbar][]
-- [sidebar][]
+### 后端开发
 
-Check [default theme docs][default-theme] for full reference.
+- **Golang** - 简洁高效的编程语言
+- **Rust** - 系统级编程语言，注重安全与性能
 
-You can [add extra style][style] with `.vuepress/styles/index.scss` file.
+</div>
 
-[routing]: https://vuejs.press/guide/page.html#routing
-[content]: https://vuejs.press/guide/page.html#content
-[synatex-extensions]: https://vuejs.press/guide/markdown.html#syntax-extensions
-[vue-feature]: https://vuejs.press/guide/markdown.html#using-vue-in-markdown
-[config]: https://vuejs.press/guide/configuration.html#client-config-file
-[client-config]: https://vuejs.press/guide/configuration.html#client-config-file
-[frontmatter]: https://vuejs.press/guide/page.html#frontmatter
-[navbar]: https://vuejs.press/reference/default-theme/config.html#navbar
-[sidebar]: https://vuejs.press/reference/default-theme/config.html#sidebar
-[default-theme]: https://vuejs.press/reference/default-theme/
-[style]: https://vuejs.press/reference/default-theme/styles.html#style-file
+</div>
+
+<div class="about-content">
+
+## 🌟 关于我
+
+我是一名前端开发者，对技术充满热情。喜欢探索新技术，解决实际问题，并将经验分享给他人。
+
+在这个博客中，我会分享：
+- 💡 技术学习心得
+- 🛠️ 项目开发经验
+- 📚 技术文档和教程
+- 🎨 前端设计思考
+- 🔧 工具和效率技巧
+
+</div>
+
+</div>
+
+<style>
+.about-me {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
+}
+
+.intro-card h2 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.skills-section {
+  margin: 2rem 0;
+}
+
+.skill-category {
+  background: var(--vp-c-bg-soft);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--vp-c-divider);
+  transition: all 0.3s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-color: var(--vp-c-brand);
+}
+
+.skill-category h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--vp-c-brand);
+  font-size: 1.3rem;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skill-category li {
+  padding: 0.5rem 0;
+  color: var(--vp-c-text-1);
+  font-size: 1rem;
+}
+
+.skill-category li strong {
+  color: var(--vp-c-brand);
+  font-weight: 600;
+}
+
+.about-content {
+  background: var(--vp-c-bg-soft);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-top: 2rem;
+  border-left: 4px solid var(--vp-c-brand);
+}
+
+.about-content h2 {
+  margin-top: 0;
+  color: var(--vp-c-text-1);
+}
+
+.about-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-content li {
+  padding: 0.5rem 0;
+  color: var(--vp-c-text-2);
+  line-height: 1.8;
+}
+</style>

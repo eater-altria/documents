@@ -3,15 +3,36 @@ import { defineUserConfig } from 'vuepress'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
-  lang: 'en-US',
+  lang: 'zh-CN',
 
-  title: 'VuePress',
-  description: 'My first VuePress Site',
+  title: '某电子的 Altria 的部落格',
+  description: '欢迎来到 Altria 的部落格，分享技术、生活与思考',
 
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: '/logo.svg',
 
-    navbar: ['/', '/get-started'],
+    navbar: [
+      { text: '首页', link: '/' },
+      { text: '博客', link: '/posts/' },
+      { text: '关于', link: '/get-started.html' },
+    ],
+
+    sidebar: {
+      '/posts/': [
+        {
+          text: '文章列表',
+          children: [
+            '/posts/README.md',
+            '/posts/家庭影视墙搭建指南.md',
+            '/posts/家用路由器组网指南.md',
+          ],
+        },
+      ],
+    },
+
+    // 启用暗色模式
+    colorMode: 'auto',
+    colorModeSwitch: true,
   }),
 
   bundler: viteBundler(),
