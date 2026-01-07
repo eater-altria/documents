@@ -11,21 +11,6 @@ actions:
   - text: 了解更多
     link: /get-started.html
     type: secondary
-
-features:
-  - title: 💡 技术分享
-    details: 记录学习过程中的技术心得，分享开发经验与最佳实践，与大家一起成长。
-  - title: 🎨 创意设计
-    details: 探索前端设计之美，关注用户体验，追求简洁优雅的界面设计。
-  - title: 🚀 前沿探索
-    details: 紧跟技术潮流，探索新兴技术，将理论与实践相结合。
-  - title: 📝 生活随笔
-    details: 记录生活中的点滴思考，分享有趣的故事和感悟。
-  - title: 🔧 工具推荐
-    details: 发现并分享好用的开发工具、效率工具，提升工作与学习效率。
-  - title: 🌟 开源贡献
-    details: 参与开源项目，贡献代码，与全球开发者共同推动技术进步。
-
 footer: Made with ❤️ by Altria | © 2024 某电子的 Altria 的部落格
 ---
 
@@ -33,8 +18,8 @@ footer: Made with ❤️ by Altria | © 2024 某电子的 Altria 的部落格
 
 <div class="blog-list">
 
-### [家庭影视墙搭建指南](/posts/家庭影视墙搭建指南.html)
-<span class="blog-meta">2024-01-15 · 技术指南</span>
+### [如何在家打造自己的多媒体影视墙](/posts/如何在家打造自己的多媒体影视墙.html)
+<span class="blog-meta">2025-11-15 · 技术指南</span>
 
 打造属于你的家庭影院体验，从硬件选择到软件配置的完整指南。
 

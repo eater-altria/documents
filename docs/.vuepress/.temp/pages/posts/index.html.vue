@@ -4,10 +4,10 @@
 <div class="article-list">
 <div class="article-card">
   <h3 class="article-title">
-    <a href="/posts/家庭影视墙搭建指南.html">家庭影视墙搭建指南</a>
+    <a href="/posts/如何在家打造自己的多媒体影视墙.html">如何在家打造自己的多媒体影视墙</a>
   </h3>
   <div class="article-meta">
-    <span>📅 2024-01-15</span>
+    <span>📅 2025-11-15</span>
     <span>🏷️ 技术指南</span>
     <span>👤 Altria</span>
   </div>
