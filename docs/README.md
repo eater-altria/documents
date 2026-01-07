@@ -18,12 +18,12 @@ footer: Made with ❤️ by Altria | © 2024 某电子的 Altria 的部落格
 
 <div class="blog-list">
 
-### [如何在家打造自己的多媒体影视墙](/posts/如何在家打造自己的多媒体影视墙.html)
+### [如何在家打造自己的多媒体影视墙](/posts/post_2.html)
 <span class="blog-meta">2025-11-15 · 技术指南</span>
 
 打造属于你的家庭影院体验，从硬件选择到软件配置的完整指南。
 
-### [家用路由器组网指南](/posts/家用路由器组网指南.html)
+### [家用路由器组网指南](/posts/post_1.html)
 <span class="blog-meta">2026-01-07 · 技术指南</span>
 
 构建稳定高效的家庭网络环境，从路由器选择到高级配置的完整指南。

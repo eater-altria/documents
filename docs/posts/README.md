@@ -12,7 +12,7 @@ layout: Blog
 
 <div class="article-card">
   <h3 class="article-title">
-    <a href="/posts/如何在家打造自己的多媒体影视墙.html">如何在家打造自己的多媒体影视墙</a>
+    <a href="/posts/post_2.html">如何在家打造自己的多媒体影视墙</a>
   </h3>
   <div class="article-meta">
     <span>📅 2025-11-15</span>
@@ -30,7 +30,7 @@ layout: Blog
 
 <div class="article-card">
   <h3 class="article-title">
-    <a href="/posts/家用路由器组网指南.html">家用路由器组网指南</a>
+    <a href="/posts/post_1.html">家用路由器组网指南</a>
   </h3>
   <div class="article-meta">
     <span>📅 2026-01-07</span>

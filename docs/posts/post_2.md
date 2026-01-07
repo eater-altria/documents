@@ -188,7 +188,7 @@ vi /etc/config/network
 
 进入OpenWrt的【网络】--> 【接口】-->【接口】页面，配置wan口设备为最后一个网口，我这里为eth3, 协议根据自家网络情况而定，如果自家上光猫拨号，则设置为DHCP，如果路由器负责拨号，则设置为PPPOE，设置为PPPOE需要输入宽带的用户名和密码。
 
-![img](https://images.altriayu.uk/blog/1761013059918-53e4c758-6c05-416b-b152-5dbc73c24d8c.png)
+![image](https://images.altriayu.uk/blog/image-20260107174707745.png)
 
 
 

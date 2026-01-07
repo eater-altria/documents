@@ -28,8 +28,8 @@ export default defineUserConfig({
           text: '文章列表',
           children: [
             '/posts/README.md',
-            '/posts/如何在家打造自己的多媒体影视墙.md',
-            '/posts/家用路由器组网指南.md',
+            '/posts/post_1.md',
+            '/posts/post_2.md',
           ],
         },
       ],
