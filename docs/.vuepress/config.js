@@ -8,6 +8,11 @@ export default defineUserConfig({
   title: '某电子的 Altria 的部落格',
   description: '欢迎来到 Altria 的部落格，分享技术、生活与思考',
 
+  head: [
+    ['link', { rel: 'icon', href: '/logo.svg' }],
+    ['link', { rel: 'apple-touch-icon', href: '/logo.svg' }],
+  ],
+
   theme: defaultTheme({
     logo: '/logo.svg',
 
