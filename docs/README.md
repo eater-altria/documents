@@ -18,6 +18,11 @@ footer: Made with ❤️ by Altria | © 2024 某电子的 Altria 的部落格
 
 <div class="blog-list">
 
+### [10分钟搭建自己的个人博客](/posts/post_3.html)
+<span class="blog-meta">2026-01-09 · 技术指南</span>
+
+使用CloudFlare全家桶快速搭建个人博客，从域名购买到网站部署的完整教程。
+
 ### [如何在家打造自己的多媒体影视墙](/posts/post_2.html)
 <span class="blog-meta">2025-11-15 · 技术指南</span>
 

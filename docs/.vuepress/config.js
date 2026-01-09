@@ -30,6 +30,7 @@ export default defineUserConfig({
             '/posts/README.md',
             '/posts/post_1.md',
             '/posts/post_2.md',
+            '/posts/post_3.md',
           ],
         },
       ],

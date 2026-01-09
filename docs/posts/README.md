@@ -12,6 +12,24 @@ layout: Blog
 
 <div class="article-card">
   <h3 class="article-title">
+    <a href="/posts/post_3.html">10分钟搭建自己的个人博客</a>
+  </h3>
+  <div class="article-meta">
+    <span>📅 2026-01-09</span>
+    <span>🏷️ 技术指南</span>
+    <span>👤 Altria</span>
+  </div>
+  <p class="article-excerpt">使用CloudFlare全家桶快速搭建个人博客，从域名购买到网站部署的完整教程</p>
+  <div class="article-tags">
+    <span class="tag">博客</span>
+    <span class="tag">CloudFlare</span>
+    <span class="tag">VuePress</span>
+    <span class="tag">部署</span>
+  </div>
+</div>
+
+<div class="article-card">
+  <h3 class="article-title">
     <a href="/posts/post_2.html">如何在家打造自己的多媒体影视墙</a>
   </h3>
   <div class="article-meta">
